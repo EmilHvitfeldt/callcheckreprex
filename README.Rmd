@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# callcheckreprex
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of callcheckreprex is to ...
+
+## Installation
+
+You can install the development version of callcheckreprex from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("EmilHvitfeldt/callcheckreprex")
+```
+
+## Manual error
+
+```{r, error=TRUE}
+library(callcheckreprex)
+library(testthat)
+my_function(NA)
+
+sessioninfo::session_info()
+```
+
+## Snapshotted error
+
+https://github.com/EmilHvitfeldt/callcheckreprex/blob/main/tests/testthat/_snaps/foo.md
